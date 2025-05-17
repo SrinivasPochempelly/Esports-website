@@ -23,3 +23,16 @@ Organizer Dashboard: Post-login access to add, edit, and view tournaments create
 Organizer and player flows are separated via interface logic (no role-based DB field).
 Only authenticated users can access respective features.
 
+**IMPORTANT
+There will be a sql file in this project. Import that sql file into database server to create a database and tables with 
+initail values
+
+Organizer login : 
+name : einstein
+email : einsteinellandala@gmail.com
+password : 89
+
+player login:
+name : srinivas
+eamil : srinivaspochempelly@gmail.com
+password : sri123
