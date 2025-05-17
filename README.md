@@ -1,5 +1,5 @@
 # Esports-website
-This is a dynamic web platform built for managing and organizing esports tournaments at Osmania University. 
+This is a dynamic web platform built for managing and organizing esports tournaments. 
 The system allows both players and organizers to interact seamlessly through dedicated interfaces. 
 Players can register, log in, and join tournaments, while organizers can create and manage their own tournaments.
 
