@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Text and Number Inputs</title>
+    <link rel="stylesheet" href="player-login.css">
+</head>
+<body>
+    <main>
+    <div class="register-container">
+        <h2>Tournament Registration</h2>
+        <form action="tournament-register.php" method="POST">
+            <div class="input-group">
+                <label for="text1">Team name : </label>
+                <input type="text" id="text1" name="team-name" placeholder="Enter your name" required>
+                <label for="text2">IGL : </label>
+                <input type="text" id="text2" name="igl-name" placeholder="Enter your IGL in game name" required>
+                <label for="text3">Player 2 :</label>
+                <input type="text" id="text3" name="palyer2-name" placeholder="Enter player2 in game name" required>
+                <label for="text4">Player 3 :</label>
+                <input type="text" id="text4" name="palyer3-name" placeholder="Enter player3 in game name" required>
+                <label for="text5">Player 4 :</label>
+                <input type="text" id="text5" name="player4-name" placeholder="Enter player4 in game name" required>
+                <label for="text5">Player 5 :</label>
+                <input type="text" id="text5" name="player5-name" placeholder="Enter player5 in game name" required>
+            </div>
+            <button class="login-btn" type="submit" name='submit' value='submit'>Submit</button>
+        </form>
+    </div>
+</main>
+<footer>
+        <p>&copy; 2024 Osmania Esports. All rights reserved.</p>
+    </footer>
+</body>
+</html>

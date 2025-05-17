@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmania Esports - Player Login</title>
+    <link rel="stylesheet" href="player-login.css">
+    <link rel="icon" href="images/osmania-esports-logo-removebg.png">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/osmania-esports-logo-removebg.png" alt="Osmania Esports Logo" class="logo">
+            <h1 class="header-title">Osmania Esports</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="my-tournaments.php">My Tournaments</a>
+            <a class="current-page" href="player-login.html">Player Login</a>
+	    <a href="oraganizer-login.html">Organizer Login</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="login-container">
+            <h2>Player Registration</h2>
+            <form action="player-registration.php" method="post">
+                <div class="input-group">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="player-name" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="usermail">E-mail :</label>
+                    <input type="email" id="usermail" name="player-mail" placeholder="Enter your e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="player-password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <label for="re-password">Confirm Password :</label>
+                    <input type="password" id="re-password" name="player-confirm-password" placeholder="Re-enter your password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" name="submit" class="login-btn">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Osmania Esports. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

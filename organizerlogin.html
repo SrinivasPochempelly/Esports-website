@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmania Esports - Organizer Login</title>
+    <link rel="stylesheet" href="player-login.css">
+    <link rel="icon" href="images/osmania-esports-logo-removebg.png">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/osmania-esports-logo-removebg.png" alt="Osmania Esports Logo" class="logo">
+            <h1 class="header-title">Osmania Esports</h1>
+        </div>
+        <nav>
+            <a href="index.php">Home</a>
+            <a class="current-page" href="organizerlogin.php">Organizer Login</a> <!-- Updated to use .php -->
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="login-container">
+            <h2>Organizer Login</h2>
+            <form class="organizerlogin-form" action="organizer-login.php" method="post">
+                <div class="input-group">
+                    <label for="organizer-name">Organizer Name:</label>
+                    <input type="text" id="organizer-name" name="organizer-name" placeholder="Enter Organizer name" required>
+                </div>
+                <div class="input-group">
+                    <label for="organizer-password">Password:</label>
+                    <input type="password" id="organizer-password" name="organizer-password" placeholder="Enter your password" required>
+                </div>
+                <p class="forgotpass"><a href="organizerlogin.php">Forgot Password?</a></p> <!-- Link back to the login page -->
+                <div class="input-group">
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Osmania Esports. All rights reserved.</p>
+    </footer>
+</body>
+</html>

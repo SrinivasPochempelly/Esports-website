@@ -1,0 +1,382 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(227, 236, 243) url('images/osmania-esports-logo-removebg.png') no-repeat center center/cover;
+    background-blend-mode: overlay;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1.6rem;
+    font-size: 1rem;
+}
+
+.menu-bar a:hover {
+    color: #ffcc00;
+}
+
+.menu-bar .current-page {
+    color: #ffcc00;
+}
+
+/* Main Section */
+main {
+    color: #141414;
+    padding: 3rem;
+}
+
+.welcome-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-heading .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4a148c;
+}
+
+.welcome-heading .subtitle {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Our Games Section */
+.our-games-box {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.our-games h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4a148c;
+    margin-bottom: 1rem;
+}
+
+.our-games {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.game-img {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.game-img:hover {
+    transform: scale(1.1);
+}
+
+.game-img img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.game-img p {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4a148c;
+}
+
+/* Tournaments Section */
+.your-tournaments {
+    padding: 2rem;
+    border: 2px solid #4a148c;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tournaments-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tournaments {
+    background-color: whitesmoke;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tournaments:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tournaments p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.tournaments .details-btn {
+    background-color: #4a148c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.tournaments .details-btn:hover {
+    background-color: #ffcc00;
+}
+
+.tournaments .tournament-register {
+    border: 2px solid #4a148c;
+    background-color: #4a148c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.tournaments .tournament-register:hover {
+    transform: scale(1.05);
+    background-color: #ffcc00;
+    color: #4a148c;
+}
+
+/* Tournament Header */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    color: #4a148c;
+    border-bottom: 2px solid #4a148c;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #141414;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.welcome-message {
+    color: white;
+    font-weight: 600;
+}
+
+/* Submenu */
+.submenu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.submenu a {
+    margin: 0 10px;
+    color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submenu a.active {
+    color: #ffcc00;
+}
+
+/* No Tournament Message */
+.no-tournament {
+    color: #999;
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .menu-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-bar a {
+        padding: 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .our-games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tournaments-box {
+        align-items: center;
+    }
+
+    .tournaments {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 2rem;
+    }
+}
+/* Basic styling for header, navigation, and submenu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 0.8rem;
+}
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #333;
+}
+
+.submenu a {
+    padding: 0.5rem 1rem;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submenu a.active {
+    color: #ffcc00;
+}
+
+/* Main section containing tournament details */
+.tournaments-box {
+    display: none;
+    padding: 2rem;
+}
+
+.tournaments-box.active {
+    display: block;
+    display: flex;
+}
+
+.tournaments {
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.no-tournament {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
+.your-tournaments h3{
+    text-align: center;
+    color: #4a148c;
+}
+/* Apply to the body and html for full-height layout */
+html, body {
+    height: 100%; /* Make sure the body fills the entire viewport */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Main content area should grow to fill available space */
+main {
+    flex: 1; /* Makes the main content area take up the available space */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #222; /* Optional: Footer background color */
+    color: #fff; /* Optional: Footer text color */
+    padding: 10px 20px; /* Optional: Padding for footer */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a.current-page {
+    font-weight: bold;
+}
+.tournaments h3{
+    text-align: center;
+    color: #4a148c;
+}

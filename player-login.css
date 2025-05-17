@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(227, 236, 243) url('images/osmania-esports-logo-removebg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode:overlay;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  position: sticky;
+}
+
+.logo {
+  height: 4rem;
+
+}
+nav{
+  padding:2rem;
+  float: right;
+
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 1.6rem;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+nav .current-page{
+  color: #ffcc00;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container , .register-container{
+  min-width: 450px;
+  margin:auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border:1px solid grey;
+  border-block-color: blue;
+  border-inline-color:purple;
+  border-radius: 10px;
+}
+.register-container{
+  min-width: 600px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a148c;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid grey;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 550;
+  margin-bottom: 5px;
+
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border:none;
+  border-bottom: 1px solid grey;
+  margin: 0.5rem;
+}
+.input-group input:focus{
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.forgotpass{
+  color:#4a148c;
+  cursor: pointer;
+  margin: 1.5rem;
+  margin-left: 0px;
+  text-decoration: underline;
+}
+.forgotpass:hover{
+  color: red;
+  
+}
+
+/* .login-btn {
+  width: 100%;
+  background-color: #4a148c;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border:  5px solid #4a148c;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
+.login-btn:active{
+  color:#4a148c;
+  background-color: white;
+} */
+.login-btn {
+  align-self: center;
+  padding: 0.8rem;
+  background-color: #4a148c;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #4a148c;
+
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #4a148c;
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  background-color: #4a148c;
+  color: white;
+}
+.your-tournaments h2{
+  color: #4a148c;
+  text-align: center;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-text a {
+  color: #4a148c;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+  color:red;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #141414;
+  color: white;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  .input-group input {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+
+  .login-btn {
+      font-size: 1rem;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  color: white;
+  
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header img.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+header .header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a.current-page {
+  font-weight: bold;
+  
+}

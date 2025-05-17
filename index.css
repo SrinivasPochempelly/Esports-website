@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(227, 236, 243) url('images/osmania-esports-logo-removebg.png') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    height: 4rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav .current-page {
+    color: #ffcc00;
+}
+
+.welcome-message {
+    color: white;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #141414;
+    color: white;
+}
+
+main {
+    color: black;
+}
+
+.welcome-heading .title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out 0.5s forwards;
+}
+
+.welcome-heading .subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-22%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.our-games-box {
+    border: 2px solid #333;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.our-games-box h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.our-games {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #f4f4f4;
+}
+
+.our-games .game-img {
+    width: 200px;
+    height: 160px;
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.game-img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-img p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    padding: 0.5rem;
+}
+
+.game-img p:hover {
+    color: rgb(34, 34, 200);
+}
+
+.no-upcoming {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2vh;
+    font-weight: 600;
+}
+
+.tournaments h3 {
+    border-bottom: 2px solid purple;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tournaments span {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .our-games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-games .game-img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .welcome-heading .title {
+        font-size: 2.5rem;
+    }
+
+    .welcome-heading .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 3rem;
+    }
+
+    nav {
+        padding: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .welcome-heading .title {
+        font-size: 2rem;
+    }
+
+    .our-games {
+        padding: 1rem;
+    }
+}
+.our-games .game-img {
+    position: relative; /* Ensure proper stacking context */
+    text-align: center; /* Center-align the text below the image */
+    margin: 10px; /* Add spacing around game blocks */
+}
+
+.our-games .game-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.our-games .game-img p {
+    margin-top: 10px; /* Space between image and text */
+    color: #333; /* Set text color */
+    font-size: 1rem; /* Ensure readable font size */
+    font-weight: bold; /* Make the text stand out */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a.current-page {
+    font-weight: bold;
+   
+}
+.tournaments .details-btn {
+    background-color: #4a148c;
+    color: white;/* White text */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Add some padding */
+    margin: 5px 0; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.tournaments .details-btn:hover {
+    background-color: white;
+    color: #4a148c;
+    transform: scale(1.05);  /* Slightly enlarge button on hover */
+}
+
+.tournaments .details-btn:active {
+    background-color: #3e8e41; /* Darker green when clicked */
+    transform: scale(1); /* Reset size */
+}
+
+.tournaments a {
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensure buttons are properly aligned */
+}
+.our-games{
+    background-color:#f4f4f4;
+}

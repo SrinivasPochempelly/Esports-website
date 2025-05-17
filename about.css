@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(227, 236, 243) url('images/osmania-esports-logo-removebg.png') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+header img.logo {
+    width: 50px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a.current-page {
+    font-weight: bold;
+   
+}
+
+main {
+    padding: 20px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-container h1, .about-container h2 {
+    color: #333;
+    text-align: center;
+}
+
+.about-container p, .about-container ul {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav .current-page {
+    color: #ffcc00;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a.current-page {
+    font-weight: bold;
+
+}

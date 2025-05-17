@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmania Esports - Player Login</title>
+    <link rel="stylesheet" href="player-login.css">
+    <link rel="icon" href="images/osmania-esports-logo-removebg.png">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/osmania-esports-logo-removebg.png" alt="Osmania Esports Logo" class="logo">
+            <h1 class="header-title">Osmania Esports</h1>
+        </div>
+        <nav>
+            <a href="index.php">Home</a>
+            <a class="current-page" href="player-login.html">Player Login</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="login-container">
+            <h2>Player Login</h2>
+            <form action="player-login.php" method="POST">
+                <div class="input-group">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <p class="forgotpass"><a href="reset_password.php">Forgot Password?</a></p> <!-- Added link to password reset page -->
+                <div class="input-group">
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+                <p class="register-text">Don't have an account? <a href="player-registration.html">Register here</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Osmania Esports. All rights reserved.</p>
+    </footer>
+
+    <script src="player-login.js"></script> 
+</body>
+</html>
