@@ -23,10 +23,9 @@ Organizer Dashboard: Post-login access to add, edit, and view tournaments create
 Organizer and player flows are separated via interface logic (no role-based DB field).
 Only authenticated users can access respective features.
 
-**IMPORTANT
-There will be a sql file in this project. Import that sql file into database server to create a database and tables with 
-initail values
-and THE ENTRY POINT OF THIS PROJECT WILL BE index.php
+**IMPORTANT steps to run the project : 
+
+There will be a sql file in this project. first creata a database named osmania_esports and Import that sql file into database server to create a database and tables with initail values and THE ENTRY POINT OF THIS PROJECT WILL BE index.php
 
 Organizer login : 
 name : einstein
