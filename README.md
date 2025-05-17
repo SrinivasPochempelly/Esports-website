@@ -26,6 +26,7 @@ Only authenticated users can access respective features.
 **IMPORTANT
 There will be a sql file in this project. Import that sql file into database server to create a database and tables with 
 initail values
+and THE ENTRY POINT OF THIS PROJECT WILL BE index.php
 
 Organizer login : 
 name : einstein
